@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 11</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="h2"><h2>Registration Form</h2></div>
+     <form  id="registration" action="" method="post">
+
+     <div class="form-wrapper">
+         <label for="user"> Username </label>
+         <input type="text" name="username" id="user" placeholder="Username ... ">
+         <div class="error-text" id="error_username"> </div>
+     </div>
+     <div class="form-wrapper">
+        <label for="mail"> Email </label>
+        <input type="email" name="email" id="mail" placeholder="Email ... ">
+        <div class="error-text" id="error_email"> </div>
+    </div>
+     
+     <div class="form-wrapper">
+        <label for="mypassword"> Password </label>
+        <input type="password" name="password" id="mypassword" placeholder="Password ... ">
+        <div class="error-text" id="error_password"> </div>
+        <i class="bi bi-eye-slash" id="togglePassword"></i>
+        
+    </div>
+
+
+    <div class="form-wrapper">
+        <label for="mypassword2">Repeat Password </label>
+        <input type="password" name="password2" id="mypassword2" placeholder="Repaet Password ... ">
+        <div class="error-text" id="error_password2"> </div>
+        <i class="bi bi-eye-slash" id="togglePassword"></i>
+        
+    </div>
+<div  class="div2">
+    <div >
+        <input type="radio" name="gender" id="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Female">
+        <label for="Female">Female</label>
+        <div class="error-text" id="error_gender"> </div>
+    </div>
+
+    <div>
+        <input type="checkbox" name="agree">
+        <label for="">I agree Terms and Conditions </label>
+        <div class="error-text" id="error_agree"> </div>
+    </div>
+    <div>
+          <button type="submit">Submit</button>
+    </div>
+  </div>
+</form>
+
+
+
+ <script src="script.js"></script>    
+</body>
+</html>
